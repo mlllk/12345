@@ -1,0 +1,27 @@
+<head>
+<title>Лист</title>
+</head>
+<body>
+<h1 id="header">Лист</h1>
+<input id="input">
+<button onclick="myfunction()">add to list something</button>
+<ul id="list">
+<li>
+Create something
+</li>
+</ul>
+</body>
+<style>
+body
+{
+    background-color:rgb(180,127,69)
+}
+</style>
+<script>
+function myfunction()
+    {
+        text=document.getelementById("input").value
+        document.getElementById("list").innerHTML+="<li>"+text+"</li>"
+        document.getElementById("input").value=""
+    }
+</script>
